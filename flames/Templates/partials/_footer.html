@@ -1,5 +1,5 @@
 {% load static %}
-     <!-- FOOTER 
+     <!-- FOOTER -->
      <footer id="footer">
             <div class="container">
                  <div class="row">
@@ -20,7 +20,7 @@
                                 </ul>
   
                                 <div class="copyright-text">
-                                     <p>Copyright &copy; 2019 Company Name</p>
+                                     <p>Copyright &copy; 2019 Voice Aflame</p>
   
                                      <p>Design: Fabri</p>
                                 </div>
@@ -33,36 +33,50 @@
                                      <h2>Contact Info</h2>
                                 </div>
                                 <address>
-                                     <p>+65 2244 1100, +66 1800 1100</p>
-                                     <p><a href="mailto:youremail.co">hello@youremail.co</a></p>
+                              <ul class="nav">
+                                        <li><a href="#"><i class="fa fa-phone"></i> +65 2244 1100</a></li>
+                                   </ul>
+  
+     
                                 </address>
   
                                 <div class="footer_menu">
                                      <h2>Quick Links</h2>
                                      <ul>
-                                             <!--<li
+                                             <li
                                              {% if 'partners' in request.path %}
                                                class="nav-item active mr-3"
                                              {% else %}
                                                class="nav-item mr-3"
                                              {% endif %}
                                              >
-                                             <a class="nav-link" href="">Our Partners</a>
+                                             <a class="nav-link" href="partners">Our Partners</a>
                                              </li>
-                                          S
-                                          <li><a href="testimonials">Testimonials</a></li>
-                                          <li><a href="team">Team</a></li>
+                                             <li
+                                             {% if 'testimonials' in request.path %}
+                                               class="nav-item active mr-3"
+                                             {% else %}
+                                               class="nav-item mr-3"
+                                             {% endif %}
+                                             >
+                                             <a class="nav-link" href="testimonials">Testimonials</a>
+                                             </li>
+                                             
+                           
+                                       
+                                          <!-- <li><a href="team">Team</a></li>
                                           <li><a href="gallery">Gallery</a></li>
                                           <li><a href="#">Terms & Conditions</a></li>
-                                          <li><a href="#">Refund Policy</a></li>
-                                     </ul>
+                                          <li><a href="#">Refund Policy</a></li>-->
+                                   </ul>
+                                   
                                 </div>
                            </div>
                       </div>
   
-                      <div class="col-md-4 col-sm-12">
+                      <div class="col-md-4 col-sm-12 w3-hide">
                            <div class="footer-info newsletter-form">
-                                <div class="section-title">
+                                <div class=" section-title">
                                      <h2>Newsletter Signup</h2>
                                 </div>
                                 <div>
@@ -80,4 +94,3 @@
                  </div>
             </div>
        </footer>
-       -->

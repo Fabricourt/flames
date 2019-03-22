@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'bookings.apps.BookingsConfig',
     'pages.apps.PagesConfig',
     #'team.apps.TeamConfig',
-    #'testaments.apps.TestamentsConfig',
+    'testaments.apps.TestamentsConfig',
     #'about.apps.AboutConfig',
     #'blog.apps.BlogConfig',
     #'gallery.apps.GalleryConfig',
