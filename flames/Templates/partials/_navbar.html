@@ -1,5 +1,5 @@
 {% load static %}
-<section class="navbar custom-navbar w3-large" role="navigation" style="width: 100%;">
+<section class="navbar custom-navbar w3-large w3-white" role="navigation" style="width:100%">
           <div class="container">
 
                <div class="navbar-header">
@@ -16,7 +16,13 @@
 
                <!-- MENU LINKS -->
                <div class="w3-white collapse navbar-collapse">
+                  {% if user.is_authenticated %} 
+                  <a href="{% url 'profile' %}" class="navbar-brand">
+                      <img src="{{ user.profile.image.url }}" class="w3-left  w3-circle w3-padding" style="width:100px; height:60px">
+                    </a>
+                  {% endif %}  
                     <ul class="nav navbar-nav navbar-nav-first">
+                        
                          <li
                          {% if '/' == request.path %}
                               class="nav-item active mr-3"
@@ -50,19 +56,6 @@
                     
                <ul class="nav navbar-nav navbar-right">
                {% if user.is_authenticated %}  
-               <li
-               {% if 'profile' in request.path %}
-                 class="nav-item active mr-3"
-               {% else %}
-                 class="nav-item mr-3"
-               {% endif %}
-               >
-               <a href="{% url 'profile' %}" class="navbar-brand">
-                  <img src="{{ user.profile.image.url }}" class="w3-left  w3-circle w3-padding" style="width:100px; height:60px">
-                </a>
-               </li>
-               
-              
                <li class="nav-item mr-3">
                  <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
                    <i class="fas fa-sign-out-alt"></i> Logout

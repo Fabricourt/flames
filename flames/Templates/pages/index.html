@@ -144,10 +144,20 @@
               
           </div>
   
-          <div class="panel top w3-opacity-min">
-              <div class="content">          
+          <div class="panel top w3-white  ">
+              <div class="content">  
+                    <div class="w3-half w3-display-right w3-hide-small">
+                            <h1>
+                                <blockquote class="w3-jumbo w3-text-red">
+                                    Preaching The Gospel Of Jesus Christ To The World
+                                </blockquote>
+                            </h1>
+                        </div>        
                   <div class="description">
-                         <img src="{% static 'images/VoicesAflame.png' %}" class="w3-shadow w3-card w3-third"style="width:100%; height:170px">
+                        <div class="w3-third">
+                            {% include 'partials/_logo.html' %}
+                        </div> 
+                      
                     </div>
               </div>
           </div>
@@ -156,11 +166,6 @@
                
           </div>
       </div>
-    
-        
-
-
-
 <script>
           document.addEventListener('DOMContentLoaded', function() {
                var parent = document.querySelector('.splitview'),
@@ -187,6 +192,7 @@
            });
 </script>
 
+  
 
         <!-- FEATURE -->
         <section id="feature w3-animate-bottom">
@@ -220,6 +226,8 @@
                </div>
           </div>
      </section>
+
+
 
 <!--Services-->
     <section id="services">
@@ -349,7 +357,7 @@
           </div>
      </section>
 
-
+  
      
       <!-- Partners -->
      <section id="partner">
