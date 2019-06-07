@@ -33,10 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
     #'accounts.apps.AccountsConfig',
-    'bookings.apps.BookingsConfig',
-    'pages.apps.PagesConfig',
     #'team.apps.TeamConfig',
-    'testaments.apps.TestamentsConfig',
     #'about.apps.AboutConfig',
     #'blog.apps.BlogConfig',
     #'gallery.apps.GalleryConfig',
@@ -51,6 +48,9 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'ckeditor', 
     'crispy_forms',
+    'pages',
+    'bookings',
+    'testaments',
     
 
 
